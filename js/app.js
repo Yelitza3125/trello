@@ -68,15 +68,17 @@ window.addEventListener('load', function(event) {
         buttonArea.classList.add('button-style');
         containerList.classList.add('hidden');
         nameList.classList.add('title-list');
+
+        buttonArea.addEventListener('click', function newForm(event) {
+          textAreaContainer.classList.add('hidden');
+          form.classList.remove('hidden');
+        });
         
-
-
       });
+      
       
     });
   };
-
-
 
 
 });
