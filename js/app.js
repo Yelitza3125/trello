@@ -2,6 +2,7 @@ window.addEventListener('load', function(event) {
 
   var insertList = document.getElementById('insert-list');
   var formContainer = document.getElementById('form-container');
+  var listContainer = document.getElementById('list-container');
 
   insertList.addEventListener('click', function hideInsert(event) {
     insertList.classList.remove('insert');
@@ -27,7 +28,18 @@ window.addEventListener('load', function(event) {
     input.classList.add('input-style');
     
     // console.log(form);
-  };
-  
+   
+    button.addEventListener('click', function showList(event) {
+      var containerList = document.createElement('div');
+      var titleList = document.createElement('h5');
+      var link = document.createElement('a');
+      titleList.textContent = input.value;
+      containerList.appendChild(titleList);
+      containerList.appendChild(link);
+      listContainer.appendChild(containerList);
+      link.setAttribute('href', '#');
+    });
+
+};
 
 });
