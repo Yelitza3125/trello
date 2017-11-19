@@ -16,7 +16,7 @@ window.addEventListener('load', function(event) {
     form.appendChild(input);
     input.setAttribute('type', 'text');
     input.setAttribute('placeholder', 'Añadir una lista...');
-    input.autofocus;
+    input.setAttribute('autofocus', true);
     var button = document.createElement('button');
     form.appendChild(button);
     button.setAttribute('type', 'submit');
