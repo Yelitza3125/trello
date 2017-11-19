@@ -225,3 +225,8 @@ Se pueden agregar múltiples listas con tarjetas. Para esto, el formulario de "A
 76. FIN FUNCION showList
 
 77. FIN FUNCION showForm
+
+
+## Diagrama de Flujo
+
+https://go.gliffy.com/go/share/image/shrqgloiyw6mwlih2581.png?utm_medium=live-embed&utm_source=custom
