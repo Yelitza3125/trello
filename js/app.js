@@ -58,6 +58,7 @@ window.addEventListener('load', function(event) {
         textArea.setAttribute('rows', '8');
         textArea.setAttribute('type', 'text');
         textArea.setAttribute('resize', 'vertical');
+        textArea.setAttribute('autofocus', true);
         textAreaContainer.appendChild(textArea);
         var buttonArea = document.createElement('button');
         buttonArea.setAttribute('type', 'submit');
@@ -70,15 +71,19 @@ window.addEventListener('load', function(event) {
         nameList.classList.add('title-list');
 
         buttonArea.addEventListener('click', function newForm(event) {
-          textAreaContainer.classList.add('hidden');
           form.classList.remove('hidden');
-        });
-        
-      });
-      
-      
+          form.classList.add('move');
+          input.value = '';
+          var cardContainer = document.createElement('div');
+          var card = document.createElement('h5');
+          card.textContent = textArea.value;
+          cardContainer.appendChild(card);
+          textAreaContainer.insertBefore(cardContainer, textArea);
+          card.classList.add('title-card');
+
+          textArea.value = '';
+        });   
+      });          
     });
   };
-
-
 });
