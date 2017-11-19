@@ -144,3 +144,14 @@ main h1 {
 .hidden {
     display: none;
 }
+
+.list-container {
+    width: 50%;
+    height: 100px;
+    background-color: #989989;
+}
+
+.title-list {
+    font-family: "Open Sans", sans-serif;
+    padding: 10px;
+}
