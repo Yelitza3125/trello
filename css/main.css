@@ -102,7 +102,7 @@ main h1 {
     padding-top: 20px;
 }
 
-.first-container {
+.insert{
     background-color: #0c6d9e;
     display: inline-block;
     width: 30%;
@@ -110,6 +110,25 @@ main h1 {
     margin-top: 40px;
 }
 
-.first-container h4 {
-    padding: 15px;
+#insert-list h4 {
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+.form-style {
+    width: 30%;
+    height: 300px;
+    background-color: #c9c9c9;
+}
+
+.button-style {
+    background-color: #40ad22;
+    border: none;
+    color: #fff;
+    display: block;
+    font-family: "Open Sans", sans-serif;
+}
+
+.hidden {
+    display: none;
 }
