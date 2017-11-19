@@ -55,7 +55,7 @@ window.addEventListener('load', function(event) {
         nameList.textContent = input.value;
         textAreaContainer.appendChild(nameList);  
         var textArea = document.createElement('textarea');
-        textArea.setAttribute('rows', '4');
+        textArea.setAttribute('rows', '8');
         textArea.setAttribute('type', 'text');
         textArea.setAttribute('resize', 'vertical');
         textAreaContainer.appendChild(textArea);
@@ -63,6 +63,11 @@ window.addEventListener('load', function(event) {
         buttonArea.setAttribute('type', 'submit');
         buttonArea.textContent = 'Añadir';
         textAreaContainer.appendChild(buttonArea);
+        textAreaContainer.classList.add('background');
+        textArea.classList.add('textarea-container');
+        buttonArea.classList.add('button-style');
+        containerList.classList.add('hidden');
+        nameList.classList.add('title-list');
         
 
 

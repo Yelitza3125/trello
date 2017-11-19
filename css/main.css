@@ -157,6 +157,7 @@ main h1 {
     margin-top: 30px;
     font-family: "Open Sans", sans-serif;
     padding: 10px;
+    font-size: 18px;
 }
 
 .link {
@@ -167,4 +168,18 @@ main h1 {
     text-decoration: underline;
     color: black;
     font-size: 13px;
+}
+
+
+.textarea-container {
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 50%;  
+}
+
+.background {
+    margin-top: 20px;
+    width: 40%;
+    height: 200px;
+    background-color: #b3b3b3;
 }
