@@ -50,7 +50,7 @@ window.addEventListener('load', function(event) {
         event.preventDefault();
       }; 
 
-      link.addEventListener('click', function textArea() {
+      link.addEventListener('click', function textArea(event) {
         var nameList = document.createElement('h5');
         nameList.textContent = input.value;
         textAreaContainer.appendChild(nameList);  
