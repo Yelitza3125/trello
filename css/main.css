@@ -95,8 +95,21 @@ main {
     margin-top: 120px;
     font-family: "Open Sans", sans-serif;
     color: #fff;
+    width: 100%;
 }
 
 main h1 {
     padding-top: 20px;
+}
+
+.first-container {
+    background-color: #0c6d9e;
+    display: inline-block;
+    width: 30%;
+    height: 50px;
+    margin-top: 40px;
+}
+
+.first-container h4 {
+    padding: 15px;
 }
