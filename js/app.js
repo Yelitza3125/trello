@@ -42,14 +42,14 @@ window.addEventListener('load', function(event) {
         link.setAttribute('href', '#');
         containerList.classList.add('list-container');
         titleList.classList.add('title-list');
+        link.classList.add('link');
+        form.classList.add('hidden');
 
         input.value = '';
         event.preventDefault();
-
-      };  
-     
+      };    
     });
 
-};
 
+  };
 });
