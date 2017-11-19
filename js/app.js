@@ -3,6 +3,7 @@ window.addEventListener('load', function(event) {
   var insertList = document.getElementById('insert-list');
   var formContainer = document.getElementById('form-container');
   var listContainer = document.getElementById('list-container');
+  var textAreaContainer = document.getElementById('textarea-container');
 
   insertList.addEventListener('click', function hideInsert(event) {
     insertList.classList.remove('insert');
@@ -45,11 +46,32 @@ window.addEventListener('load', function(event) {
         link.classList.add('link');
         form.classList.add('hidden');
 
-        input.value = '';
+        // input.value = '';
         event.preventDefault();
-      };    
+      }; 
+
+      link.addEventListener('click', function textArea() {
+        var nameList = document.createElement('h5');
+        nameList.textContent = input.value;
+        textAreaContainer.appendChild(nameList);  
+        var textArea = document.createElement('textarea');
+        textArea.setAttribute('rows', '4');
+        textArea.setAttribute('type', 'text');
+        textArea.setAttribute('resize', 'vertical');
+        textAreaContainer.appendChild(textArea);
+        var buttonArea = document.createElement('button');
+        buttonArea.setAttribute('type', 'submit');
+        buttonArea.textContent = 'Añadir';
+        textAreaContainer.appendChild(buttonArea);
+        
+
+
+      });
+      
     });
-
-
   };
+
+
+
+
 });
