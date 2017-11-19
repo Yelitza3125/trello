@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #0079bf;
+}
+
+header {
+    background-color: #0c6d9e;
+    font-family: "Open Sans", sans-serif;
+    height: 120px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    overflow: auto;
+}
+
+.logo-boards {
+    display: inline-block;
+    height: 50px;
+    width: 10%;
+    background-color: rgba(221, 212, 212, 0.5);
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.logo-boards i, span, .search i {
+    color: #fff;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.search {
+    display: inline-block;
+    height: 50px;
+    width: 15%;
+    background-color: rgba(221, 212, 212, 0.5);
+    margin: 5px 10px;
+    border-radius: 10px;
+}
+
+.search i {
+    margin-left: 180px;
+}
+
+div.logo-trello {
+    display: inline-block;
+    margin: 10px 50px;
+    width: 10%;
+    position: relative;
+    top: 20px;
+    left: 180px;
+}
+div.logo-trello img {
+    width: 100%;
+}
+div.list {
+    display: inline-block;
+    position: relative;
+    top: 15px;
+    left: 550px;
+    overflow: auto;
+}
+
+div ul {
+    float: right;
+    list-style: none;
+}
+
+div ul li.icon {
+    overflow: hidden;
+    display: inline-block;
+    background-color: rgba(221, 212, 212, 0.5);
+    font-size: 16px;
+    color:  #fff;
+    margin-left: 15px;
+    width: 35px;
+    height: 35px;    
+    border-radius: 5px;
+    text-align: center;
+}
+
+div ul li.icon i {
+    padding: 5px;
+}
+
+#profile {
+width: 100%;
+}  
