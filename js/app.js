@@ -16,13 +16,15 @@ window.addEventListener('load', function(event) {
     form.appendChild(input);
     input.setAttribute('type', 'text');
     input.setAttribute('placeholder', 'Añadir una lista...');
+    input.autofocus;
     var button = document.createElement('button');
     form.appendChild(button);
     button.setAttribute('type', 'submit');
-    button.textContent = 'Añadir';
+    button.textContent = 'Guardar';
     formContainer.appendChild(form);
     form.classList.add('form-style');
     button.classList.add('button-style');
+    input.classList.add('input-style');
     
     // console.log(form);
   };

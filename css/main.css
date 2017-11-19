@@ -116,6 +116,7 @@ main h1 {
 }
 
 .form-style {
+    margin-top: 20px;
     width: 30%;
     height: 300px;
     background-color: #c9c9c9;
@@ -124,9 +125,20 @@ main h1 {
 .button-style {
     background-color: #40ad22;
     border: none;
+    border-radius: 5px;
     color: #fff;
     display: block;
     font-family: "Open Sans", sans-serif;
+    margin-top: 30px;
+    margin-left: 20px;
+    padding: 10px;
+}
+
+.input-style {
+    margin-top: 30px;
+    margin-left: 20px;
+    width: 70%;
+    height: 30px;
 }
 
 .hidden {
